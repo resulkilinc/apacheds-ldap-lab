@@ -1,0 +1,56 @@
+dn: cn=IT-Admins,ou=Groups,dc=company,dc=local
+changetype: modify
+add: member
+member: uid=ali,ou=IT,dc=company,dc=local
+member: uid=zeynep,ou=IT,dc=company,dc=local
+member: uid=can,ou=IT,dc=company,dc=local
+member: uid=elif,ou=IT,dc=company,dc=local
+-
+
+dn: cn=HR-Managers,ou=Groups,dc=company,dc=local
+changetype: modify
+add: member
+member: uid=fatma,ou=HR,dc=company,dc=local
+member: uid=emre,ou=HR,dc=company,dc=local
+member: uid=selin,ou=HR,dc=company,dc=local
+member: uid=burak,ou=HR,dc=company,dc=local
+-
+
+dn: cn=Finance-Team,ou=Groups,dc=company,dc=local
+changetype: modify
+add: member
+member: uid=deniz,ou=Finance,dc=company,dc=local
+member: uid=gizem,ou=Finance,dc=company,dc=local
+member: uid=murat,ou=Finance,dc=company,dc=local
+member: uid=seda,ou=Finance,dc=company,dc=local
+-
+
+dn: cn=Sales-Team,ou=Groups,dc=company,dc=local
+changetype: modify
+add: member
+member: uid=ahmet,ou=Sales,dc=company,dc=local
+member: uid=merve,ou=Sales,dc=company,dc=local
+member: uid=onur,ou=Sales,dc=company,dc=local
+member: uid=busra,ou=Sales,dc=company,dc=local
+member: uid=kerem,ou=Sales,dc=company,dc=local
+-
+
+dn: cn=Support-Team,ou=Groups,dc=company,dc=local
+changetype: modify
+add: member
+member: uid=tolga,ou=Support,dc=company,dc=local
+member: uid=esra,ou=Support,dc=company,dc=local
+member: uid=hakan,ou=Support,dc=company,dc=local
+member: uid=ipek,ou=Support,dc=company,dc=local
+member: uid=serkan,ou=Support,dc=company,dc=local
+-
+
+dn: cn=Marketing-Team,ou=Groups,dc=company,dc=local
+changetype: modify
+add: member
+member: uid=berna,ou=Marketing,dc=company,dc=local
+member: uid=cem,ou=Marketing,dc=company,dc=local
+member: uid=derya,ou=Marketing,dc=company,dc=local
+member: uid=furkan,ou=Marketing,dc=company,dc=local
+member: uid=melis,ou=Marketing,dc=company,dc=local
+-

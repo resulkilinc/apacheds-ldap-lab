@@ -1,0 +1,34 @@
+# Yeni kullanicilar
+dn: uid=mehmet,ou=HR,dc=company,dc=local
+objectClass: inetOrgPerson
+objectClass: organizationalPerson
+objectClass: person
+objectClass: top
+cn: Mehmet Yilmaz
+sn: Yilmaz
+uid: mehmet
+givenName: Mehmet
+mail: mehmet@company.local
+userPassword: LabOnly-ChangeMe
+
+dn: uid=ayse,ou=Finance,dc=company,dc=local
+objectClass: inetOrgPerson
+objectClass: organizationalPerson
+objectClass: person
+objectClass: top
+cn: Ayse Demir
+sn: Demir
+uid: ayse
+givenName: Ayse
+mail: ayse@company.local
+userPassword: LabOnly-ChangeMe
+
+dn: cn=HR-Managers,ou=Groups,dc=company,dc=local
+objectClass: groupOfNames
+cn: HR-Managers
+member: uid=mehmet,ou=HR,dc=company,dc=local
+
+dn: cn=Finance-Team,ou=Groups,dc=company,dc=local
+objectClass: groupOfNames
+cn: Finance-Team
+member: uid=ayse,ou=Finance,dc=company,dc=local

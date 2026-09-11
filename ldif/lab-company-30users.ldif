@@ -1,0 +1,364 @@
+# 6 departments (IT, HR, Finance already exist)
+dn: ou=Sales,dc=company,dc=local
+objectClass: top
+objectClass: organizationalUnit
+ou: Sales
+
+dn: ou=Support,dc=company,dc=local
+objectClass: top
+objectClass: organizationalUnit
+ou: Support
+
+dn: ou=Marketing,dc=company,dc=local
+objectClass: top
+objectClass: organizationalUnit
+ou: Marketing
+
+# New groups
+dn: cn=Sales-Team,ou=Groups,dc=company,dc=local
+objectClass: top
+objectClass: groupOfNames
+cn: Sales-Team
+member: uid=admin,ou=system
+
+dn: cn=Support-Team,ou=Groups,dc=company,dc=local
+objectClass: top
+objectClass: groupOfNames
+cn: Support-Team
+member: uid=admin,ou=system
+
+dn: cn=Marketing-Team,ou=Groups,dc=company,dc=local
+objectClass: top
+objectClass: groupOfNames
+cn: Marketing-Team
+member: uid=admin,ou=system
+
+# ===== IT (resul exists) + 4 =====
+dn: uid=ali,ou=IT,dc=company,dc=local
+objectClass: top
+objectClass: person
+objectClass: organizationalPerson
+objectClass: inetOrgPerson
+cn: Ali Kaya
+sn: Kaya
+givenName: Ali
+uid: ali
+mail: ali.kaya@company.local
+userPassword: LabOnly-ChangeMe
+
+dn: uid=zeynep,ou=IT,dc=company,dc=local
+objectClass: top
+objectClass: person
+objectClass: organizationalPerson
+objectClass: inetOrgPerson
+cn: Zeynep Celik
+sn: Celik
+givenName: Zeynep
+uid: zeynep
+mail: zeynep.celik@company.local
+userPassword: LabOnly-ChangeMe
+
+dn: uid=can,ou=IT,dc=company,dc=local
+objectClass: top
+objectClass: person
+objectClass: organizationalPerson
+objectClass: inetOrgPerson
+cn: Can Demir
+sn: Demir
+givenName: Can
+uid: can
+mail: can.demir@company.local
+userPassword: LabOnly-ChangeMe
+
+dn: uid=elif,ou=IT,dc=company,dc=local
+objectClass: top
+objectClass: person
+objectClass: organizationalPerson
+objectClass: inetOrgPerson
+cn: Elif Aydin
+sn: Aydin
+givenName: Elif
+uid: elif
+mail: elif.aydin@company.local
+userPassword: LabOnly-ChangeMe
+
+# ===== HR (mehmet exists) + 4 =====
+dn: uid=fatma,ou=HR,dc=company,dc=local
+objectClass: top
+objectClass: person
+objectClass: organizationalPerson
+objectClass: inetOrgPerson
+cn: Fatma Yildiz
+sn: Yildiz
+givenName: Fatma
+uid: fatma
+mail: fatma.yildiz@company.local
+userPassword: LabOnly-ChangeMe
+
+dn: uid=emre,ou=HR,dc=company,dc=local
+objectClass: top
+objectClass: person
+objectClass: organizationalPerson
+objectClass: inetOrgPerson
+cn: Emre Sahin
+sn: Sahin
+givenName: Emre
+uid: emre
+mail: emre.sahin@company.local
+userPassword: LabOnly-ChangeMe
+
+dn: uid=selin,ou=HR,dc=company,dc=local
+objectClass: top
+objectClass: person
+objectClass: organizationalPerson
+objectClass: inetOrgPerson
+cn: Selin Arslan
+sn: Arslan
+givenName: Selin
+uid: selin
+mail: selin.arslan@company.local
+userPassword: LabOnly-ChangeMe
+
+dn: uid=burak,ou=HR,dc=company,dc=local
+objectClass: top
+objectClass: person
+objectClass: organizationalPerson
+objectClass: inetOrgPerson
+cn: Burak Ozturk
+sn: Ozturk
+givenName: Burak
+uid: burak
+mail: burak.ozturk@company.local
+userPassword: LabOnly-ChangeMe
+
+# ===== Finance (ayse exists) + 4 =====
+dn: uid=deniz,ou=Finance,dc=company,dc=local
+objectClass: top
+objectClass: person
+objectClass: organizationalPerson
+objectClass: inetOrgPerson
+cn: Deniz Kurt
+sn: Kurt
+givenName: Deniz
+uid: deniz
+mail: deniz.kurt@company.local
+userPassword: LabOnly-ChangeMe
+
+dn: uid=gizem,ou=Finance,dc=company,dc=local
+objectClass: top
+objectClass: person
+objectClass: organizationalPerson
+objectClass: inetOrgPerson
+cn: Gizem Polat
+sn: Polat
+givenName: Gizem
+uid: gizem
+mail: gizem.polat@company.local
+userPassword: LabOnly-ChangeMe
+
+dn: uid=murat,ou=Finance,dc=company,dc=local
+objectClass: top
+objectClass: person
+objectClass: organizationalPerson
+objectClass: inetOrgPerson
+cn: Murat Acar
+sn: Acar
+givenName: Murat
+uid: murat
+mail: murat.acar@company.local
+userPassword: LabOnly-ChangeMe
+
+dn: uid=seda,ou=Finance,dc=company,dc=local
+objectClass: top
+objectClass: person
+objectClass: organizationalPerson
+objectClass: inetOrgPerson
+cn: Seda Koc
+sn: Koc
+givenName: Seda
+uid: seda
+mail: seda.koc@company.local
+userPassword: LabOnly-ChangeMe
+
+# ===== Sales (5) =====
+dn: uid=ahmet,ou=Sales,dc=company,dc=local
+objectClass: top
+objectClass: person
+objectClass: organizationalPerson
+objectClass: inetOrgPerson
+cn: Ahmet Erdem
+sn: Erdem
+givenName: Ahmet
+uid: ahmet
+mail: ahmet.erdem@company.local
+userPassword: LabOnly-ChangeMe
+
+dn: uid=merve,ou=Sales,dc=company,dc=local
+objectClass: top
+objectClass: person
+objectClass: organizationalPerson
+objectClass: inetOrgPerson
+cn: Merve Tas
+sn: Tas
+givenName: Merve
+uid: merve
+mail: merve.tas@company.local
+userPassword: LabOnly-ChangeMe
+
+dn: uid=onur,ou=Sales,dc=company,dc=local
+objectClass: top
+objectClass: person
+objectClass: organizationalPerson
+objectClass: inetOrgPerson
+cn: Onur Guven
+sn: Guven
+givenName: Onur
+uid: onur
+mail: onur.guven@company.local
+userPassword: LabOnly-ChangeMe
+
+dn: uid=busra,ou=Sales,dc=company,dc=local
+objectClass: top
+objectClass: person
+objectClass: organizationalPerson
+objectClass: inetOrgPerson
+cn: Busra Cetin
+sn: Cetin
+givenName: Busra
+uid: busra
+mail: busra.cetin@company.local
+userPassword: LabOnly-ChangeMe
+
+dn: uid=kerem,ou=Sales,dc=company,dc=local
+objectClass: top
+objectClass: person
+objectClass: organizationalPerson
+objectClass: inetOrgPerson
+cn: Kerem Duman
+sn: Duman
+givenName: Kerem
+uid: kerem
+mail: kerem.duman@company.local
+userPassword: LabOnly-ChangeMe
+
+# ===== Support (5) =====
+dn: uid=tolga,ou=Support,dc=company,dc=local
+objectClass: top
+objectClass: person
+objectClass: organizationalPerson
+objectClass: inetOrgPerson
+cn: Tolga Sen
+sn: Sen
+givenName: Tolga
+uid: tolga
+mail: tolga.sen@company.local
+userPassword: LabOnly-ChangeMe
+
+dn: uid=esra,ou=Support,dc=company,dc=local
+objectClass: top
+objectClass: person
+objectClass: organizationalPerson
+objectClass: inetOrgPerson
+cn: Esra Bilgin
+sn: Bilgin
+givenName: Esra
+uid: esra
+mail: esra.bilgin@company.local
+userPassword: LabOnly-ChangeMe
+
+dn: uid=hakan,ou=Support,dc=company,dc=local
+objectClass: top
+objectClass: person
+objectClass: organizationalPerson
+objectClass: inetOrgPerson
+cn: Hakan Ucar
+sn: Ucar
+givenName: Hakan
+uid: hakan
+mail: hakan.ucar@company.local
+userPassword: LabOnly-ChangeMe
+
+dn: uid=ipek,ou=Support,dc=company,dc=local
+objectClass: top
+objectClass: person
+objectClass: organizationalPerson
+objectClass: inetOrgPerson
+cn: Ipek Yalcin
+sn: Yalcin
+givenName: Ipek
+uid: ipek
+mail: ipek.yalcin@company.local
+userPassword: LabOnly-ChangeMe
+
+dn: uid=serkan,ou=Support,dc=company,dc=local
+objectClass: top
+objectClass: person
+objectClass: organizationalPerson
+objectClass: inetOrgPerson
+cn: Serkan Aksoy
+sn: Aksoy
+givenName: Serkan
+uid: serkan
+mail: serkan.aksoy@company.local
+userPassword: LabOnly-ChangeMe
+
+# ===== Marketing (5) =====
+dn: uid=berna,ou=Marketing,dc=company,dc=local
+objectClass: top
+objectClass: person
+objectClass: organizationalPerson
+objectClass: inetOrgPerson
+cn: Berna Tekin
+sn: Tekin
+givenName: Berna
+uid: berna
+mail: berna.tekin@company.local
+userPassword: LabOnly-ChangeMe
+
+dn: uid=cem,ou=Marketing,dc=company,dc=local
+objectClass: top
+objectClass: person
+objectClass: organizationalPerson
+objectClass: inetOrgPerson
+cn: Cem Dogan
+sn: Dogan
+givenName: Cem
+uid: cem
+mail: cem.dogan@company.local
+userPassword: LabOnly-ChangeMe
+
+dn: uid=derya,ou=Marketing,dc=company,dc=local
+objectClass: top
+objectClass: person
+objectClass: organizationalPerson
+objectClass: inetOrgPerson
+cn: Derya Ince
+sn: Ince
+givenName: Derya
+uid: derya
+mail: derya.ince@company.local
+userPassword: LabOnly-ChangeMe
+
+dn: uid=furkan,ou=Marketing,dc=company,dc=local
+objectClass: top
+objectClass: person
+objectClass: organizationalPerson
+objectClass: inetOrgPerson
+cn: Furkan Aslan
+sn: Aslan
+givenName: Furkan
+uid: furkan
+mail: furkan.aslan@company.local
+userPassword: LabOnly-ChangeMe
+
+dn: uid=melis,ou=Marketing,dc=company,dc=local
+objectClass: top
+objectClass: person
+objectClass: organizationalPerson
+objectClass: inetOrgPerson
+cn: Melis Kara
+sn: Kara
+givenName: Melis
+uid: melis
+mail: melis.kara@company.local
+userPassword: LabOnly-ChangeMe

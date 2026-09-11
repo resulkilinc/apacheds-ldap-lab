@@ -1,0 +1,24 @@
+dn: cn=Operations-Team,ou=Groups,dc=company,dc=local
+changetype: modify
+add: member
+member: uid=yusuf,ou=Operations,dc=company,dc=local
+member: uid=asli,ou=Operations,dc=company,dc=local
+member: uid=baris,ou=Operations,dc=company,dc=local
+member: uid=dilara,ou=Operations,dc=company,dc=local
+member: uid=emir,ou=Operations,dc=company,dc=local
+member: uid=fulya,ou=Operations,dc=company,dc=local
+member: uid=gokhan,ou=Operations,dc=company,dc=local
+member: uid=hande,ou=Operations,dc=company,dc=local
+member: uid=ilker,ou=Operations,dc=company,dc=local
+member: uid=jale,ou=Operations,dc=company,dc=local
+member: uid=koray,ou=Operations,dc=company,dc=local
+member: uid=leyla,ou=Operations,dc=company,dc=local
+member: uid=mert,ou=Operations,dc=company,dc=local
+member: uid=nazli,ou=Operations,dc=company,dc=local
+member: uid=okan,ou=Operations,dc=company,dc=local
+member: uid=pelin,ou=Operations,dc=company,dc=local
+member: uid=riza,ou=Operations,dc=company,dc=local
+member: uid=su,ou=Operations,dc=company,dc=local
+member: uid=umut,ou=Operations,dc=company,dc=local
+member: uid=vildan,ou=Operations,dc=company,dc=local
+-

@@ -1,0 +1,35 @@
+# ACL - IT departmani: sadece IT-Admins yonetebilir
+dn: ou=IT,dc=company,dc=local
+changetype: modify
+add: aci
+aci: ( 001
+  version 3.0; acl "IT Admins manage IT";
+  allow (read,search,add,delete,modify)
+  groupdn="ldap:///cn=IT-Admins,ou=Groups,dc=company,dc=local";)
+
+# ACL - HR departmani: HR-Managers yonetebilir
+dn: ou=HR,dc=company,dc=local
+changetype: modify
+add: aci
+aci: ( 002
+  version 3.0; acl "HR Managers manage HR";
+  allow (read,search,add,delete,modify)
+  groupdn="ldap:///cn=HR-Managers,ou=Groups,dc=company,dc=local";)
+
+# ACL - Finance departmani: Finance-Team yonetebilir
+dn: ou=Finance,dc=company,dc=local
+changetype: modify
+add: aci
+aci: ( 003
+  version 3.0; acl "Finance Team manage Finance";
+  allow (read,search,add,delete,modify)
+  groupdn="ldap:///cn=Finance-Team,ou=Groups,dc=company,dc=local";)
+
+# ACL - Herkes kendi kaydini okuyabilsin (authenticated users)
+dn: dc=company,dc=local
+changetype: modify
+add: aci
+aci: ( 004
+  version 3.0; acl "Authenticated read all";
+  allow (read,search,compare)
+  userdn="ldap:///anyone";)

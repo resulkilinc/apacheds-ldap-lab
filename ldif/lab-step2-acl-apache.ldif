@@ -1,0 +1,72 @@
+# 1) Access Control alt sistemini ac
+dn: ads-directoryServiceId=default,ou=config
+changetype: modify
+replace: ads-dsaccesscontrolenabled
+ads-dsaccesscontrolenabled: TRUE
+
+# 2) company.local icin Access Control Specific Area
+dn: dc=company,dc=local
+changetype: modify
+add: administrativeRole
+administrativeRole: accessControlSpecificArea
+
+# 3) ACL kurallari (subentry)
+dn: cn=companyAuthSubentry,dc=company,dc=local
+changetype: add
+objectclass: top
+objectclass: subentry
+objectclass: accessControlSubentry
+cn: companyAuthSubentry
+subtreeSpecification: {}
+prescriptiveACI: {
+	identificationTag "itAdminFullAccess",
+	precedence 20,
+	authenticationLevel simple,
+	itemOrUserFirst userFirst:
+	{
+		userClasses
+		{
+			name { "uid=resul,ou=IT,dc=company,dc=local" }
+		},
+		userPermissions
+		{
+			{
+				protectedItems
+				{
+					entry, allUserAttributeTypesAndValues
+				},
+				grantsAndDenials
+				{
+					grantAdd, grantDiscloseOnError, grantRead,
+					grantRemove, grantBrowse, grantExport, grantImport,
+					grantModify, grantRename, grantReturnDN,
+					grantCompare, grantFilterMatch, grantInvoke
+				}
+			}
+		}
+	}
+}
+prescriptiveACI: {
+	identificationTag "allUsersReadACI",
+	precedence 10,
+	authenticationLevel simple,
+	itemOrUserFirst userFirst:
+	{
+		userClasses
+		{
+			allUsers
+		},
+		userPermissions
+		{
+			{
+				protectedItems { entry, allUserAttributeTypesAndValues },
+				grantsAndDenials { grantRead, grantBrowse, grantReturnDN,
+					grantCompare, grantFilterMatch, grantDiscloseOnError }
+			},
+			{
+				protectedItems { attributeType { userPassword } },
+				grantsAndDenials { denyRead, denyCompare, denyFilterMatch }
+			}
+		}
+	}
+}

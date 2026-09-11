@@ -1,0 +1,252 @@
+# Yeni departman (sonradan ekleme ornegi)
+dn: ou=Operations,dc=company,dc=local
+objectClass: top
+objectClass: organizationalUnit
+ou: Operations
+
+dn: cn=Operations-Team,ou=Groups,dc=company,dc=local
+objectClass: top
+objectClass: groupOfNames
+cn: Operations-Team
+member: uid=admin,ou=system
+
+# 20 yeni kullanici - Operations
+dn: uid=yusuf,ou=Operations,dc=company,dc=local
+objectClass: top
+objectClass: person
+objectClass: organizationalPerson
+objectClass: inetOrgPerson
+cn: Yusuf Kilic
+sn: Kilic
+givenName: Yusuf
+uid: yusuf
+mail: yusuf.kilic@company.local
+userPassword: LabOnly-ChangeMe
+
+dn: uid=asli,ou=Operations,dc=company,dc=local
+objectClass: top
+objectClass: person
+objectClass: organizationalPerson
+objectClass: inetOrgPerson
+cn: Asli Ozkan
+sn: Ozkan
+givenName: Asli
+uid: asli
+mail: asli.ozkan@company.local
+userPassword: LabOnly-ChangeMe
+
+dn: uid=baris,ou=Operations,dc=company,dc=local
+objectClass: top
+objectClass: person
+objectClass: organizationalPerson
+objectClass: inetOrgPerson
+cn: Baris Guven
+sn: Guven
+givenName: Baris
+uid: baris
+mail: baris.guven@company.local
+userPassword: LabOnly-ChangeMe
+
+dn: uid=dilara,ou=Operations,dc=company,dc=local
+objectClass: top
+objectClass: person
+objectClass: organizationalPerson
+objectClass: inetOrgPerson
+cn: Dilara Eren
+sn: Eren
+givenName: Dilara
+uid: dilara
+mail: dilara.eren@company.local
+userPassword: LabOnly-ChangeMe
+
+dn: uid=emir,ou=Operations,dc=company,dc=local
+objectClass: top
+objectClass: person
+objectClass: organizationalPerson
+objectClass: inetOrgPerson
+cn: Emir Sari
+sn: Sari
+givenName: Emir
+uid: emir
+mail: emir.sari@company.local
+userPassword: LabOnly-ChangeMe
+
+dn: uid=fulya,ou=Operations,dc=company,dc=local
+objectClass: top
+objectClass: person
+objectClass: organizationalPerson
+objectClass: inetOrgPerson
+cn: Fulya Aktas
+sn: Aktas
+givenName: Fulya
+uid: fulya
+mail: fulya.aktas@company.local
+userPassword: LabOnly-ChangeMe
+
+dn: uid=gokhan,ou=Operations,dc=company,dc=local
+objectClass: top
+objectClass: person
+objectClass: organizationalPerson
+objectClass: inetOrgPerson
+cn: Gokhan Bozkurt
+sn: Bozkurt
+givenName: Gokhan
+uid: gokhan
+mail: gokhan.bozkurt@company.local
+userPassword: LabOnly-ChangeMe
+
+dn: uid=hande,ou=Operations,dc=company,dc=local
+objectClass: top
+objectClass: person
+objectClass: organizationalPerson
+objectClass: inetOrgPerson
+cn: Hande Cakir
+sn: Cakir
+givenName: Hande
+uid: hande
+mail: hande.cakir@company.local
+userPassword: LabOnly-ChangeMe
+
+dn: uid=ilker,ou=Operations,dc=company,dc=local
+objectClass: top
+objectClass: person
+objectClass: organizationalPerson
+objectClass: inetOrgPerson
+cn: Ilker Yurt
+sn: Yurt
+givenName: Ilker
+uid: ilker
+mail: ilker.yurt@company.local
+userPassword: LabOnly-ChangeMe
+
+dn: uid=jale,ou=Operations,dc=company,dc=local
+objectClass: top
+objectClass: person
+objectClass: organizationalPerson
+objectClass: inetOrgPerson
+cn: Jale Mutlu
+sn: Mutlu
+givenName: Jale
+uid: jale
+mail: jale.mutlu@company.local
+userPassword: LabOnly-ChangeMe
+
+dn: uid=koray,ou=Operations,dc=company,dc=local
+objectClass: top
+objectClass: person
+objectClass: organizationalPerson
+objectClass: inetOrgPerson
+cn: Koray Sezer
+sn: Sezer
+givenName: Koray
+uid: koray
+mail: koray.sezer@company.local
+userPassword: LabOnly-ChangeMe
+
+dn: uid=leyla,ou=Operations,dc=company,dc=local
+objectClass: top
+objectClass: person
+objectClass: organizationalPerson
+objectClass: inetOrgPerson
+cn: Leyla Bagci
+sn: Bagci
+givenName: Leyla
+uid: leyla
+mail: leyla.bagci@company.local
+userPassword: LabOnly-ChangeMe
+
+dn: uid=mert,ou=Operations,dc=company,dc=local
+objectClass: top
+objectClass: person
+objectClass: organizationalPerson
+objectClass: inetOrgPerson
+cn: Mert Uzun
+sn: Uzun
+givenName: Mert
+uid: mert
+mail: mert.uzun@company.local
+userPassword: LabOnly-ChangeMe
+
+dn: uid=nazli,ou=Operations,dc=company,dc=local
+objectClass: top
+objectClass: person
+objectClass: organizationalPerson
+objectClass: inetOrgPerson
+cn: Nazli Orhan
+sn: Orhan
+givenName: Nazli
+uid: nazli
+mail: nazli.orhan@company.local
+userPassword: LabOnly-ChangeMe
+
+dn: uid=okan,ou=Operations,dc=company,dc=local
+objectClass: top
+objectClass: person
+objectClass: organizationalPerson
+objectClass: inetOrgPerson
+cn: Okan Ersoy
+sn: Ersoy
+givenName: Okan
+uid: okan
+mail: okan.ersoy@company.local
+userPassword: LabOnly-ChangeMe
+
+dn: uid=pelin,ou=Operations,dc=company,dc=local
+objectClass: top
+objectClass: person
+objectClass: organizationalPerson
+objectClass: inetOrgPerson
+cn: Pelin Karaca
+sn: Karaca
+givenName: Pelin
+uid: pelin
+mail: pelin.karaca@company.local
+userPassword: LabOnly-ChangeMe
+
+dn: uid=riza,ou=Operations,dc=company,dc=local
+objectClass: top
+objectClass: person
+objectClass: organizationalPerson
+objectClass: inetOrgPerson
+cn: Riza Demirtas
+sn: Demirtas
+givenName: Riza
+uid: riza
+mail: riza.demirtas@company.local
+userPassword: LabOnly-ChangeMe
+
+dn: uid=su,ou=Operations,dc=company,dc=local
+objectClass: top
+objectClass: person
+objectClass: organizationalPerson
+objectClass: inetOrgPerson
+cn: Su Akgun
+sn: Akgun
+givenName: Su
+uid: su
+mail: su.akgun@company.local
+userPassword: LabOnly-ChangeMe
+
+dn: uid=umut,ou=Operations,dc=company,dc=local
+objectClass: top
+objectClass: person
+objectClass: organizationalPerson
+objectClass: inetOrgPerson
+cn: Umut Coskun
+sn: Coskun
+givenName: Umut
+uid: umut
+mail: umut.coskun@company.local
+userPassword: LabOnly-ChangeMe
+
+dn: uid=vildan,ou=Operations,dc=company,dc=local
+objectClass: top
+objectClass: person
+objectClass: organizationalPerson
+objectClass: inetOrgPerson
+cn: Vildan Toprak
+sn: Toprak
+givenName: Vildan
+uid: vildan
+mail: vildan.toprak@company.local
+userPassword: LabOnly-ChangeMe

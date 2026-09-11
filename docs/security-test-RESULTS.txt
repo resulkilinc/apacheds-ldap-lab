@@ -1,0 +1,26 @@
+========== 1) AUTHENTICATION ==========
+PASS: admin bind (Authentication)
+PASS: resul IT admin bind
+PASS: ahmet normal user bind
+PASS: wrong password rejected
+========== 2) AUTHORIZATION / ACL ==========
+PASS: ACL subentry exists
+PASS: normal user can READ entries
+PASS: userPassword hidden from normal user (ACL denyRead)
+PASS: normal user MODIFY denied by ACL
+PASS: IT admin resul can MODIFY (Authorization grant)
+# requesting: description 
+description: updated-by-it-admin-resul
+========== 3) TLS / LDAPS ==========
+subject=C=US, O=apache, OU=directory, CN=apacheds
+notBefore=Sep  3 11:52:30 2026 GMT
+notAfter=Sep  3 11:52:30 2027 GMT
+X509v3 Subject Alternative Name: 
+    DNS:apacheds-lab, IP Address:127.0.1.1
+PASS: LDAPS bind on 10636 (TLS encrypted channel)
+PASS: LDAPS with CACERT (REQCERT allow) - cert presented & used
+PASS: StartTLS (-ZZ) on port 10389
+PASS: normal user LDAPS authenticated search
+========== SUMMARY ==========
+PASS count: 13
+FAIL count: 0
